@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ div#flash_alert,div#flash_notice {
+	background: #f0ad4e;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: -2%;
+	padding: 18px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+div#flash_notice {
+	background: #54AFB3 !important;
+}
+.table-title {
+	font: 30px bold;
+	color: #C50018;
+}
+.title {
+	font: 20px bold;
+}
+
+.table-body {
+	font-size: 14px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+div.body-head {
+	margin-bottom: 30px;
+}
+ul.nav-bar {
+	float: right;
+}
+ul.nav-bar li {
+	list-style: none;
+	float: left;
+	padding: 5px;
+}
+.img-circle{
+	width: 156px;
+}
+div.post-body {
+	background: #DAD8D8;
+	margin-bottom: 2095;
+	
+}
+button.btn.btn-default {
+	border-radius: 0;
+}
+.btn-group a {
+	padding: 8px 160px 8px 160px;
+}
+.container-title, .container-content {
+padding: 15px;
+
+}
+li.user-email {
+	margin-top: 9px;
+	font: 14px bolder;
+	font-famirif;
+}

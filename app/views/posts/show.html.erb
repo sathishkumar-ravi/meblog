@@ -1,0 +1,16 @@
+
+<div class="post-body">
+      <div class="row container-title">
+        <div class="col-md-12 pull-left table-title"><%= @post.title %></div>
+      </div>
+      <div class="row container-content">
+        <div class="col-md-2"><img src="<%= @post.avatar %>" class="img-circle"  alt="Picture" /></div>
+        <div class="col-md-10 table-body"><%= @post.body %></div>
+      </div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<%= link_to 'Edit', edit_post_path(@post), :class=>"btn btn-default" %> 
+		<%= link_to 'Back', posts_path, :class=>"btn btn-default" %>
+	</div>
+</div>
