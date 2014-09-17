@@ -39,6 +39,7 @@ div#flash_notice {
 	font-size: 14px;
 	line-height: 30px;
 	text-align: justify;
+
 }
 
 div.body-head {
@@ -57,7 +58,7 @@ ul.nav-bar li {
 }
 div.post-body {
 	background: #DAD8D8;
-	margin-bottom: 2095;
+	margin-bottom: 60px;
 	
 }
 button.btn.btn-default {
