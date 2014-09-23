@@ -12,6 +12,11 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
   end
+  def mypost
+    if user_signed_in?
+      @current_user_post = current_user.posts
+    end
+  end
 
   # GET /posts/new
   def new
@@ -70,6 +75,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body, :avatar)
+      params.require(:post).permit(:title, :body, :avatar, :user_id)
     end
 end

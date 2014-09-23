@@ -1,0 +1,31 @@
+<div class="row">
+<div class="body-head col-md-12">
+  <h1>My posts</h1>
+</div>
+</div>
+<% if user_signed_in? %>
+  <% @current_user_post.each do |post| %>
+    <div class="post-body">
+      <div class="row container-title">
+        <div class="col-md-12 pull-left table-title"><%= post.title %></div>
+      </div>
+      <div class="row container-content">
+        <div class="col-md-2"><img src="<%= post.avatar %>" class="img-circle"  alt="Picture" /></div>
+        <div class="col-md-10 table-body"><%= post.body %></div>
+      </div>
+      <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default"><%= link_to 'Show', post %></button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_post_path(post) %></button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+<%= link_to 'New Post', new_post_path,:class=>"btn btn-default" %>
+<%= link_to 'Back', posts_path, :class=>"btn btn-default" %>
